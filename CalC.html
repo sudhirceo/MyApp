@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Calculator</title>
+<style>
+button
+{
+background-color:pink;
+color:white;
+}
+input
+{
+height: 20px;
+  width: 7%;
+}
+#a
+{
+height: 20px;
+  width: 5%;
+background-color:pink;
+color:white;
+}
+</style>
+<script>
+function myFunction1()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('1').value;
+}
+function myFunction2()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('2').value;
+}
+function myFunction3()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('3').value;
+}
+
+ 
+
+function myFunction4()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('4').value;
+}
+function myFunction5()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('5').value;
+}
+function myFunction6()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('6').value;
+}
+function myFunction7()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('7').value;
+}
+function myFunction8()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('8').value;
+}
+function myFunction9()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('9').value;
+}
+function myFunction0()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('0').value;
+}
+function myFunction11()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('+').value;
+}
+function myFunction12()
+{
+ document.getElementById('b').value= document.getElementById('b').value+document.getElementById('-').value;
+}
+
+ 
+
+  function solve() 
+         { 
+             let x = document.getElementById("b").value 
+             let y = eval(x) 
+             document.getElementById("b").value = y 
+         } 
+function clr() 
+         { 
+             document.getElementById("b").value = "" 
+         } 
+           
+</script>
+
+ 
+
+
+</head>
+<body>
+
+ 
+
+ 
+
+<input type='text'  id='b'></input><br>
+<button id='1' value='1' onclick="myFunction1()">1</button>
+<button id='2' value='2' onclick="myFunction2()">2</button>
+<button id='3' value='3' onclick="myFunction3()">3</button>
+<br>
+<button id='4' value='4' onclick="myFunction4()">4</button>
+<button id='5' value='5' onclick="myFunction5()">5</button>
+<button id='6' value='6' onclick="myFunction6()">6</button>
+<br>
+<button id='7' value='7' onclick="myFunction7()">7</button>
+<button id='8' value='8' onclick="myFunction8()">8</button>
+<button id='9' value='9' onclick="myFunction9()">9</button>
+<br>
+<button id='0' value='0' onclick="myFunction0()">0</button>
+<button id='+' value='+' onclick="myFunction11()">+</button>
+<button id='-' value='-' onclick="myFunction12()">-</button>
+<br>
+<button id='a' onclick="solve()">=</button>
+<button id='c' onclick="clr()">C</button>
+</body>
+
+ 
+
+
+</html>
